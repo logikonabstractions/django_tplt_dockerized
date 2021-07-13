@@ -1,0 +1,3 @@
+[submodule "djangoProject/frontend/sbadmin2-fork"]
+	path = djangoProject/frontend/sbadmin2-fork
+	url = https://github.com/logikonabstractions/sbadmin2-fork.git
