@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+ {% block body %}
+
+
+
+
+     
+
+<div class="d-flex flex-column align-items-center">
+	<div class="item">
+		<form action="" method="post" enctype='multipart/form-data'>
+		{%csrf_token%}
+		<div class="container-fluid">
+			<table>{{ form }}</table>
+		</div>
+		<input class="btn btn-primary" type="submit" value="Upload">
+		</form>
+	</div>
+	<div class="item">
+		{% for img in images %}
+            <p>url:{{ img.file.url }}</p>
+			<img src="{{img.file.url}}" alt="">
+		{% endfor %}
+	</div>
+</div>
+{%  endblock %}
